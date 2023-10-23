@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
         loop: true, // Pour un défilement continu
         autoplay: {
-            delay: 3000, // Définit l'intervalle d'autoslide en millisecondes (3 secondes)
+            delay: 5000, // Définit l'intervalle d'autoslide en millisecondes (3 secondes)
         },
     });
 });

@@ -1,11 +1,17 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Londrina Solid', Arial, sans-serif;
-    color: #E52D82;
+    
     
     
 }
+h3{
+    color: #E52D82; 
+}
 
-
+h2 {
+    color: #E52D82;
+    text-align: left;
+}
 .bold-text {
     font-family: 'Open Sans Bold', Arial, sans-serif;
     font-weight: 700;
@@ -67,50 +73,6 @@ footer ul li {
 main {
     padding: 20px;
 }
-
-/* Styles pour les images du carrousel */
-.carousel-image {
-    width: 100px;
-    height: auto;
-}
-
-/* Styles pour les éléments des actualités */
-.actualite {
-    display: flex;
-    justify-content: space-between;
-}
-
-.actualite-item {
-    flex-basis: calc(33.33% - 10px); /* Pour trois éléments par ligne avec un espacement de 10px entre eux */
-    margin-right: 10px;
-}
-
-/* Styles pour les éléments des partenaires */
-.partenaire {
-    display: flex;
-    justify-content: space-between;
-}
-
-.partenaire-item {
-    flex-basis: calc(33.33% - 10px);
-    margin-right: 10px;
-}
-
-/* Styles pour les éléments des livrables */
-.livrable {
-    display: flex;
-    justify-content: space-between;
-}
-
-.livrable-item {
-    flex-basis: calc(33.33% - 10px);
-    margin-right: 10px;
-}
-
-
-
-
-
 
 /* Styles pour le bouton déroulant de langue */
 .lang-dropdown {
