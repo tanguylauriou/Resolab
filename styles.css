@@ -1,7 +1,12 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Londrina Solid', Arial, sans-serif;
+    text-align: center; /* Centre horizontalement */
+    
 }
 
+h2 {
+    color: #EA7F1B;
+}
 .bold-text {
     font-family: 'Open Sans Bold', Arial, sans-serif;
     font-weight: 700;
@@ -13,6 +18,7 @@ body {
     color: white;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 300; /* Pour la version Light */
+    text-align: center; /* Centre horizontalement */
 }
 
 header {
@@ -65,27 +71,72 @@ main {
 
 /* Styles pour les images du carrousel */
 .carousel-image {
-    width: 25%; /* Redimensionne les images à 25% de la largeur du conteneur */
+    width: 100px;
     height: auto;
 }
 
+/* Styles pour les actualités et les partenaires */
+.placeholder-grid {
+    display: flex; /* Affichage en ligne (côte à côte) */
+    gap: 20px; /* Espacement entre les éléments */
+}
 
-/* Styles pour les boutons de navigation du carrousel */
-.swiper-button {
-    background-color: #000000;
-    color: #fff;
-    font-size: 24px;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
+.actualite, .partenaire {
+    flex: 1; /* Les éléments occupent un espace égal dans la grille */
+    /* Ajoutez d'autres styles personnalisés ici, par exemple, des marges ou des bordures */
+}
+
+/* Styles pour le conteneur de livrables */
+#livrables .placeholder-grid {
+    display: flex; /* Affichage en ligne (côte à côte) */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement égal entre les éléments */
+}
+
+.livrable {
+    flex: 1; /* Les éléments occupent un espace égal dans la grille */
+    text-align: center; /* Centre le contenu horizontalement */
+}
+
+.livrable img {
+    max-width: 100%; /* Ajuste la largeur maximale de l'image pour qu'elle ne dépasse pas le conteneur */
+}
+
+.livrable h3 {
+    margin: 10px 0; /* Marge au-dessus et en dessous du titre */
+}
+
+/* Styles pour le bouton déroulant de langue */
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
     cursor: pointer;
 }
 
-.swiper-button:hover {
-    background-color: #0056b3;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
 
-/* Vous devrez personnaliser le CSS pour chaque page en fonction de la structure décrite. */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Affiche le contenu déroulant lorsque le bouton est survolé */
+.lang-dropdown:hover .dropdown-content {
+    display: block;
+}
