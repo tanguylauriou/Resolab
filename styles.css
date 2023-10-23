@@ -1,0 +1,91 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Londrina Solid', Arial, sans-serif;
+}
+
+.bold-text {
+    font-family: 'Open Sans Bold', Arial, sans-serif;
+    font-weight: 700;
+}
+
+
+body {
+    background-color: #222323;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300; /* Pour la version Light */
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #EA7F1B;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styles pour les images du carrousel */
+.carousel-image {
+    width: 25%; /* Redimensionne les images à 25% de la largeur du conteneur */
+    height: auto;
+}
+
+
+/* Styles pour les boutons de navigation du carrousel */
+.swiper-button {
+    background-color: #000000;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.swiper-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Vous devrez personnaliser le CSS pour chaque page en fonction de la structure décrite. */
