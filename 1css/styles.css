@@ -1,0 +1,130 @@
+
+
+h3{
+    word-wrap: break-word;
+}
+
+
+/* Styles pour les éléments des actualités */
+.actualité-container {
+    display: flex; /* Utilisez Flexbox pour aligner les articles horizontalement */
+    justify-content: space-between; /* Espacez les articles uniformément horizontalement */
+    
+}
+.actualités {
+    text-align: center;
+}
+
+.actualite {
+    display: inline-block;
+    width: 30%; /* Ajustez la largeur comme nécessaire pour afficher 3 articles par ligne */
+    margin: 10px; /* Ajoutez une marge horizontale de 10px entre les articles */
+    box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur */
+
+    /* Ajoutez d'autres styles comme la taille de la police, la couleur du texte, etc. selon vos préférences */
+}
+.actualite img {
+    width: 75%;
+    height: auto;
+}
+
+
+
+/* Styles pour les éléments des partenaires */
+.partenaire {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partenaire-item {
+    flex-basis: calc(33.33% - 10px);
+    margin-right: 10px;
+}
+
+/* Styles pour les éléments des livrables */
+.livrable {
+    display: flex;
+    justify-content: space-between;
+}
+
+.livrable-item {
+    flex-basis: calc(33.33% - 10px);
+    margin-right: 10px;
+}
+
+.articles-container {
+    display: flex; /* Utilisez Flexbox pour aligner les articles horizontalement */
+    justify-content: space-between; /* Espacez les articles uniformément horizontalement */
+}
+
+.articles {
+    text-align: center;
+}
+
+.article {
+    display: inline-block;
+    width: 30%; /* Ajustez la largeur comme nécessaire pour afficher 3 articles par ligne */
+    margin: 10px; /* Ajoutez une marge horizontale de 10px entre les articles */
+    box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur */
+
+    /* Ajoutez d'autres styles comme la taille de la police, la couleur du texte, etc. selon vos préférences */
+}
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.text{text-align: left;}
+
+
+/* Styles pour les smartphones */
+@media screen and (max-width: 600px) {
+    img
+    {
+        width: 40%;
+        height: auto;
+    }
+
+    .carousel-video img{
+    
+        width: auto;
+         height: 100px;
+        }
+
+    /* Pour tous les écrans, y compris les téléphones */
+.articles {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux articles de passer à la ligne lorsque l'écran est trop étroit */
+    justify-content: space-between; /* Répartit l'espace entre les articles */
+}
+
+.article {
+    width: calc(33.33% - 20px); /* Ajustez la largeur des articles en fonction du nombre d'articles par ligne */
+    margin: 10px; /* Ajoutez une marge autour de chaque article */
+    box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur */
+}
+
+.actualité {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux articles de passer à la ligne lorsque l'écran est trop étroit */
+    justify-content: space-between; /* Répartit l'espace entre les articles */
+}
+
+.actualite {
+    width: calc(33.33% - 20px); /* Ajustez la largeur des articles en fonction du nombre d'articles par ligne */
+    margin: 10px; /* Ajoutez une marge autour de chaque article */
+    box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur */
+}
+   
+}
+
+
+/* Styles pour les écrans plus grands (min-width: 769px) */
+@media screen and (min-width: 601px) {
+  
+img.carousel-video{
+    height : 200px;
+    width : auto;  
+    padding-bottom: 10%;  
+}
+}

@@ -1,0 +1,75 @@
+
+
+.livrables-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajustez ceci selon vos besoins */
+}
+
+.livrable {
+    flex: 0 0 calc(33.33% - 20px); /* Ajustez la largeur de chaque livrable ici */
+    margin: 10px; /* Marge entre les livrables */
+}
+
+.filter-button,.filter-button-pub {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style de base pour les boutons */
+.filter-button, .filter-button-pub {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #E52D82;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Londrina Solid', Arial, sans-serif;
+    font-weight: 300;
+    transition: background-color 0.3s;
+    
+    /* Ajout de border-radius pour rendre les coins arrondis */
+    border-radius: 20px;
+}
+.filter-button.active,.filter-button-pub.active {
+    background-color: #FF5733; /* Couleur d'arrière-plan lorsque le bouton est actif */
+    color: #fff; /* Couleur du texte lorsque le bouton est actif */
+}
+
+
+
+.filter-buttons button:hover {
+    background-color: #D6006D;
+
+}
+
+
+/* Styles pour les médias de petite taille (par exemple, écrans mobiles) */
+@media (max-width: 600px) {
+
+    span{
+        font-size: 5px;
+    }
+    
+
+.filter-buttons-public,
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0; /* Espacement entre les boutons */
+}
+
+.filter-button-pub,
+.filter-button {
+    flex: 1;
+    margin: 5px; /* Espacement autour des boutons */
+}
+
+.filter-buttons .filter-button {
+    flex: 0 0 calc(50% - 10px); /* Deux boutons par ligne avec un espacement de 10px entre eux */
+}
+   
+}
+
+

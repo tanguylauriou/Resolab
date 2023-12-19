@@ -1,0 +1,345 @@
+
+ /* Styles pour les images de drapeau */
+ .flag-img {
+    width: 24px; /* Largeur souhaitée */
+    height: 17px; /* Hauteur automatique pour maintenir les proportions */
+}
+
+.bold-text {
+    font-family: 'Open Sans Bold', Arial, sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Londrina Solid', Arial, sans-serif;
+    color: white;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+body {
+    background-color: #4a4a4a;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    align-content: center;
+    margin: 0%;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index : 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-family: 'Londrina Solid', Arial, sans-serif;
+    font-size: 23px;
+}
+
+nav ul li a:hover {
+    color: #E52D82;
+    font-size: 26px; /* Au survol, agrandissez la taille de police */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding-top: 200px;
+}
+
+/* Styles pour le bouton déroulant de langue */
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Affiche le contenu déroulant lorsque le bouton est survolé */
+.lang-dropdown:hover .dropdown-content {
+    display: block;
+}
+a {
+    color: #E52D82;
+    text-decoration: none; /* Pour supprimer le soulignement des liens */
+    font-weight: bold;
+    font-size: 16px; /* Taille de police par défaut pour les liens */
+    transition:font-size 0.3s;
+}
+
+a:hover {
+    color: #FF1493; /* Change la couleur au survol */
+    font-size: 18px; /* Au survol, agrandissez la taille de police */
+}
+.logo1,
+    .logo2 {
+        
+        width: 40mm;
+        height: auto;
+
+    }
+    .footer1
+    {
+        
+        width: 40mm;
+        height: auto;
+
+    }
+    .footer2 
+    {
+        width: 30mm;
+        height: auto;
+
+    }
+
+    footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-images {
+    display: flex;
+}
+
+
+/* Styles pour les smartphones */
+@media screen and (max-width: 600px) {
+
+    h2{
+        font-size:25px;
+    }
+    .flex-container{
+        flex-wrap: wrap;
+    }
+    .left-column h3 {font-size: 10px;}
+
+        .left-column p {font-size: 5px;}
+
+    img
+    {
+        width: 40%;
+        height: auto;
+    }
+   
+
+   
+   a{font-size: 10px;}
+    
+    
+    
+    h1, h3, h4, h5, h6 {
+        font-size: 10px;
+    }
+
+    p{
+        font-size: 5px;
+    }
+
+ 
+
+}
+
+@media screen and (min-width: 769px) {
+    .menu-button {
+        display: none; /* Masquer le bouton "Menu" sur les écrans plus grands */
+    }
+    .logo-left,
+    .logo-right {
+    display: none; /* Masquez les logos */
+    
+}
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .flex-container{
+        flex-wrap: wrap;
+    }
+    .right-column p {font-size: 10px;}
+
+        .left-column p {font-size: 10px;}
+
+        .left-column li {font-size: 10px;}
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        
+    }
+
+    .menu-button {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .logo-right img {
+        width: 100px; 
+        height: auto;
+    }
+
+    /* Styles pour le premier logo */
+    .logo-left img {
+        width: 100px;
+        height: auto; 
+        padding-right: 10px;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #222323;
+        z-index: 1;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+        color: white;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #E52D82;
+    }
+    .menu-button {
+        display: block;
+        margin: 0 auto;
+    }
+    .menu-button {
+        background-color: black;
+        color: white;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .menu-button:hover {
+        background-color: #E52D82;
+        color: white;
+    }
+    
+    /* Styles spécifiques pour les boutons de la barre de navigation */
+    nav ul li .menu-button {
+        font-size: 14px;
+        padding: 8px 16px;
+        background-color: transparent;
+        color: white;
+    }
+    
+    nav ul li .menu-button:hover {
+        background-color: transparent;
+        color: #E52D82;
+    }
+    footer {
+        width: 100%;
+    }
+
+    .logo1,
+.logo2 {
+    display: none; /* Masquez les logos */
+}
+
+.footer1,
+    .footer2 {
+        
+        width: 20mm;
+        height: auto;
+
+    }
+    .lien-footer
+    {
+        font-size: 10px;
+    }
+}

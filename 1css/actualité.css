@@ -1,0 +1,27 @@
+.actualite-item img {
+    width: 300px; /* Spécifiez la largeur souhaitée */
+    height: auto; /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions */
+}
+
+h3{word-wrap: break-word;}
+
+
+/* Styles pour les éléments des actualités */
+.actualite-container {
+    text-align: center; /* Centrez les éléments horizontalement */
+    
+}
+
+.actualite-item {
+  
+    margin: 10px; /* Marge entre les éléments */
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .actualite-item img {
+        width: 150px;
+        height: auto;
+    }
+}

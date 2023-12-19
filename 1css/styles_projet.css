@@ -1,0 +1,142 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.left-column {
+    flex: 1;
+}
+.right-column {
+    flex: 1;
+}
+
+
+h2 {
+    
+    text-align: center;
+    font-size: 50px;
+}
+
+.left-column h3{
+    text-align: left;
+    font-size: 25px;
+}
+
+.right-column h3{
+    text-align: right;
+}
+
+.right-column img {
+     width: 100%; /* Définit la largeur à 50% de la largeur de la colonne */
+     max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
+     height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+
+}
+
+.left-column img {
+    width: 100%; /* Définit la largeur à 50% de la largeur de la colonne */
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
+    height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+
+}
+
+.right-column-partenaires img{
+    width: 75%; /* Définit la largeur à 50% de la largeur de la colonne */
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
+    height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+}
+
+
+
+@media screen and (max-width: 600px) {
+     li{
+         font-size: 5px;
+     }
+
+     p{
+        font-size: 5px;
+    }
+
+
+    }
+
+    .partenaire {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .partenaire-item {
+        background-color: #4a4a4a;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .flex-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .left-column {
+        flex: 1;
+    }
+
+    .left-column li{
+        text-align: left;
+
+    }
+    
+    /* Styles spécifiques pour le texte */
+    .left-column h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    /* Styles spécifiques pour le paragraphe */
+    .left-column p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .right-column p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: right;
+    }
+    
+    
+    .right-column-partenaire {
+        flex: 1;
+        text-align: right;
+    }
+    
+    /* Styles spécifiques pour le logo */
+    .right-column-partenaire img {
+        max-width: 100px;
+    }
+    
+    @media screen and (max-width: 768px) {
+       
+        .right-column img {
+            width: 100%; /* Définit la largeur à 50% de la largeur de la colonne */
+            max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
+            height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+           
+       }
+       .left-column img {
+        width: 100%; /* Définit la largeur à 50% de la largeur de la colonne */
+        max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
+        height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+        padding-bottom: 10cm;
+   }
+       
+       .right-column-partenaires img{
+           width: 50%; /* Définit la largeur à 50% de la largeur de la colonne */
+           max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
+           height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+       }
+    }
+   
