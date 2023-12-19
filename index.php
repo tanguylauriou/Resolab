@@ -48,7 +48,7 @@
             echo '<div class="actualité">';
             while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                 echo '<div class="actualite">';
-                echo '<a href="' . $row['lien_article'] . '">';
+                echo '<a href="' . $row['lien_article'] . '" target="_blank">';
                 echo '<img src="' . $row['image_url'] . '" alt="' . $row['titre'] . '">';
                 echo '</a>';
                 echo '<h3>' . $row['titre'] . '</h3>';

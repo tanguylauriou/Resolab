@@ -34,7 +34,7 @@
                 <li><a href="projet.php">Projet</a></li>
                 <li><a href="actualité.php">Actualité</a></li>
                 <li><a href="blog.php">Blog</a></li>
-                <li><a href="livrable.php">Livrable</a></li>
+                <li><a href="livrable.php">Livrables</a></li>
                 <li><a href="partenaire.php">Partenaires</a></li>
                 <li class="lang-dropdown">
     <a href="#" class="dropbtn" id="languageButton">

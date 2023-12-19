@@ -45,7 +45,7 @@ if ($row_count > 0) {
         // Utilisez des div pour centrer le contenu
         echo '<div class="actualite-item">';
         
-        echo '<h3><a href="' . $lien_article . '">' . $titre . '</a></h3>';
+        echo '<h3><a href="' . $lien_article .  '" target="_blank">' . $titre . '</a></h3>';
         echo '<img class="actualite-image" src="' . $row['image_url'] . '" alt="' . $titre . '">';
         
         // Fermez la div actualite-container

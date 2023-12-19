@@ -17,7 +17,7 @@
 </head>
 <body>
     <main>
-        <h2>livrable</h2>
+        <h2>livrables</h2>
     <a href="ajouter_livrable.php" class="bouton-ajouter-livrable">Ajouter un livrable</a>
     <div class="filter-buttons-public">
     <button class="filter-button-pub" data-filter="tous">Tous</button>
