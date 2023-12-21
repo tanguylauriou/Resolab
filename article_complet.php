@@ -21,6 +21,8 @@ $articleDetails = $stmt->fetch(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="1css/header-footer.css">
+    <link rel="stylesheet" href="1css/style_article_complet.css">
+
     <!-- Ajoutez d'autres éléments d'en-tête si nécessaire -->
 </head>
 <body>
@@ -49,8 +51,7 @@ $articleDetails = $stmt->fetch(PDO::FETCH_ASSOC);
             
             <p><?php echo $articleDetails['contenu']; ?></p>
         </div>
-    </main>
-
-    <?php include 'footer.php'; ?>
+    </main>    
 </body>
+<?php include 'footer.php'; ?>
 </html>

@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Déplacez le fichier téléchargé vers un emplacement sur le serveur (par exemple, un dossier "livrables")
     $upload_dir = 'dossier-livrables/'; // Spécifiez le répertoire de destination
     $upload_path = $upload_dir . $file_name;
-   
+    if (move_uploaded_file($file_tmp, $upload_path)) {
         // Insérez un enregistrement dans la base de données avec la liste des publics cibles et le type de document
         $query = "INSERT INTO livrables (nom, public_cible, fichier, type_document, description) VALUES (:nom, :public_cibles, :fichier_url, :type_document, :description)";
         $stmt = $connexion->prepare($query);
@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             echo "Erreur lors de l'ajout du livrable";
         }
+    }
     
 }
 

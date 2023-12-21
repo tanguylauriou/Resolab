@@ -62,7 +62,8 @@ function supprimerArticle(articleId) {
                     $titre = $row['titre'];
                     $contenu = $row['contenu'];
 
-                    echo '<h2><a href="article_complet.php?id=' . $row['id'] . '">' . $row['titre'] . '</a></h2>';
+                    echo '<h2><a class="lien-article" href="article_complet.php?id=' . $row['id'] . '">' . $row['titre'] . '</a></h2>';
+
 
                     if ($row['media_type'] === 'photo') {
                         echo '<div class="image-container">';

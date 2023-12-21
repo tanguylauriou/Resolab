@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+body
+{
+margin-left:10% ;
+margin-right:10% ;
+}
+}
+@media screen and (max-width: 600px) {
+img{width: 25%;
+    height: auto;
+}
+p{font-size: 15px;}
+
+a{font-size: 15px;}
+}
+

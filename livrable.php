@@ -19,6 +19,9 @@
     <main>
         <h2>livrables</h2>
     <a href="ajouter_livrable.php" class="bouton-ajouter-livrable">Ajouter un livrable</a>
+
+    <br>
+    <h1> Public cible</h1>
     <div class="filter-buttons-public">
     <button class="filter-button-pub" data-filter="tous">Tous</button>
     <button class="filter-button-pub" data-filter="Enfants">Enfants</button>
@@ -26,6 +29,8 @@
     <button class="filter-button-pub" data-filter="Parents">Parents</button>
 </div>
 <br>
+<br>
+<h1>Type livrable</h1>
 <div class="filter-buttons">
     <button class="filter-button" data-filter="tous">Tous</button>
     <button class="filter-button" data-filter="Guides">Guides</button>

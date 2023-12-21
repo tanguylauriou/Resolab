@@ -12,6 +12,16 @@ h3{word-wrap: break-word;}
     
 }
 
+.lien-actualite {
+    font-size: 24px; 
+    
+}
+
+.lien-actualite:hover {
+    color: #FF1493; /* Change la couleur au survol */
+    font-size: 26px; /* Au survol, agrandissez la taille de police */
+}
+
 .actualite-item {
   
     margin: 10px; /* Marge entre les éléments */

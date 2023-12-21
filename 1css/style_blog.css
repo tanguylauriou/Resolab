@@ -1,7 +1,12 @@
 
 
-
-
+.lien-article {
+    font-size: 24px; 
+}
+.lien-article:hover {
+    color: #FF1493; /* Change la couleur au survol */
+    font-size: 26px; /* Au survol, j'aggrandi la taille de police */
+}
 
 
 p {
