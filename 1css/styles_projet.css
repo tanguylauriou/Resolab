@@ -3,6 +3,20 @@
     justify-content: space-between;
     padding:20px;
 }
+
+.flex-container-part {
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.flex-container-part > *:first-child {
+    flex-basis: 50%; /* 75% de largeur pour le premier élément */
+}
+
+.flex-container-part > *:last-child {
+    flex-basis: 50%; /* 25% de largeur pour le deuxième élément */
+}
+
 .left-column {
     flex: 1;
 }
@@ -46,19 +60,26 @@ h2 {
     height: auto; /* Maintient le ratio hauteur/largeur de l'image */
 }
 
+a.ancre{ background-color: transparent; /* Supprime le fond */
+         border: none;
+    }
 
 
 @media screen and (max-width: 600px) {
+
+
      li{
-         font-size: 10px;
+         font-size: 15px;
      }
 
-     p{
-        font-size: 10px;
+     .flex-container-part {
+        display:block;
+        align-items: center;
     }
-
-
     }
+     
+
+    
 
     .partenaire {
         margin: 0 auto;
@@ -73,9 +94,11 @@ h2 {
     }
     
     .flex-container {
-        display: flex;
+        display:block;
         align-items: center;
     }
+
+   
     
     .left-column {
         flex: 1;
@@ -117,26 +140,37 @@ h2 {
     .right-column-partenaire img {
         max-width: 100px;
     }
-    
-    @media screen and (max-width: 768px) {
+   
+    @media screen and (max-width: 800px) {
        
         .right-column img {
-            width: 100%; /* Définit la largeur à 50% de la largeur de la colonne */
+            width: 100%; 
             max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
             height: auto; /* Maintient le ratio hauteur/largeur de l'image */
            
        }
        .left-column img {
-        width: 100%; /* Définit la largeur à 50% de la largeur de la colonne */
+        width: 100%; 
         max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
         height: auto; /* Maintient le ratio hauteur/largeur de l'image */
         padding-bottom: 10cm;
    }
        
        .right-column-partenaires img{
-           width: 50%; /* Définit la largeur à 50% de la largeur de la colonne */
+           width: 100%;
            max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
            height: auto; /* Maintient le ratio hauteur/largeur de l'image */
+        
        }
+
+       .left-column {
+        flex: 1; /* La colonne de texte prend 75% de l'espace disponible */
     }
+
+    .right-column-partenaires {
+        flex: 1; /* La colonne d'image prend 25% de l'espace disponible */
+    }
+}
+
+    
    

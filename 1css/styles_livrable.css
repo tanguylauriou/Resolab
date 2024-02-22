@@ -20,7 +20,7 @@
 .filter-button, .filter-button-pub {
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #E52D82;
+    background-color: #A51259;
     color: white;
     border: none;
     cursor: pointer;
@@ -48,7 +48,7 @@
 @media (max-width: 600px) {
 
     span{
-        font-size: 10px;
+        font-size: 15px;
     }
     
 

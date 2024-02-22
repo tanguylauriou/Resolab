@@ -5,6 +5,8 @@ h3{
 }
 
 
+
+
 /* Styles pour les éléments des actualités */
 .actualité-container {
     display: flex; /* Utilisez Flexbox pour aligner les articles horizontalement */
@@ -76,13 +78,26 @@ h3{
 
 .text{text-align: left;}
 
+section#presentation{display: flex; align-items: center;}
+
 
 /* Styles pour les smartphones */
 @media screen and (max-width: 600px) {
-    img
-    {
-        width: 40%;
+
+    section#presentation{display: block;}
+
+    .article img {
+        width: 100%;
         height: auto;
+    }
+
+    .actualite img {
+        width: 250px;
+        height: auto;
+    }
+
+    .partenaire{
+        display: block;
     }
 
     .carousel-video img{
@@ -94,26 +109,29 @@ h3{
     /* Pour tous les écrans, y compris les téléphones */
 .articles {
     display: flex;
-    flex-wrap: wrap; /* Permet aux articles de passer à la ligne lorsque l'écran est trop étroit */
-    justify-content: space-between; /* Répartit l'espace entre les articles */
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .article {
-    width: calc(33.33% - 20px); /* Ajustez la largeur des articles en fonction du nombre d'articles par ligne */
+    width: 100%;
     margin: 10px; /* Ajoutez une marge autour de chaque article */
     box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur */
 }
 
 .actualité {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux articles de passer à la ligne lorsque l'écran est trop étroit */
+    display: grid;
+    justify-items: center;
     justify-content: space-between; /* Répartit l'espace entre les articles */
+    margin: 10px; /* Ajoutez une marge autour de chaque article */
+    box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur */
 }
 
 .actualite {
-    width: calc(33.33% - 20px); /* Ajustez la largeur des articles en fonction du nombre d'articles par ligne */
-    margin: 10px; /* Ajoutez une marge autour de chaque article */
-    box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur */
+    display: grid;
+    justify-content: center;
 }
    
 }

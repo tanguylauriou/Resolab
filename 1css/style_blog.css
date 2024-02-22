@@ -4,7 +4,6 @@
     font-size: 24px; 
 }
 .lien-article:hover {
-    color: #FF1493; /* Change la couleur au survol */
     font-size: 26px; /* Au survol, j'aggrandi la taille de police */
 }
 
@@ -45,7 +44,7 @@ h2 {
 }
 
 .article {
-    margin: 20px;
+    padding: 20px;
     border: 1px solid #ccc;
     width: 40%;
     word-wrap: break-word;

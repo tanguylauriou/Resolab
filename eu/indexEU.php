@@ -1,11 +1,11 @@
-<?php include 'fr/header.php'; ?>
+<?php include 'header.php'; ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="eu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="1css/styles.css">
-    <link rel="stylesheet" href="1css/header-footer.css">
+    <link rel="stylesheet" href="../1css/styles.css">
+    <link rel="stylesheet" href="../1css/header-footer.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
@@ -25,7 +25,7 @@
             </div>
             <div style="flex: 1;">
                 
-                    <img src="image-logoSite/resolab_mobile.png" alt="Image de la présentation">
+                    <img src="../image-logoSite/resolab_mobile.png" alt="Image de la présentation">
                 
             </div>
         </section>
@@ -40,10 +40,10 @@
     <h2>Dernières actualités</h2>
     <section class="actualité-container">
         <?php
-        require_once('fr/connexion_Bdd.php');
+        require_once('../fr/connexion_Bdd.php');
 
         // Récupérez les trois dernières actualités
-        $query = "SELECT * FROM actualites WHERE langue = 'fr' ORDER BY id DESC LIMIT 3";
+        $query = "SELECT * FROM actualites WHERE langue = 'eu' ORDER BY id DESC LIMIT 3";
         $result = $connexion->query($query);
 
         if ($result) {
@@ -75,35 +75,35 @@
                 <div class="partenaire-item">
                     <h3>antic Pays Basque (FR)</h3>
                     <p>Agence de développement des usages numériques responsables</p>
-                    <a href="fr/partenaire.php" aria-label="voir l'antic Pays Basque">
+                    <a href="partenaire.php" aria-label="voir l'antic Pays Basque">
                         voir le partenaire.
                     </a>
                 </div>
                 <div class= "partenaire-item">
                     <h3>AdoEnia (FR)</h3>
                     <p>Service de prévention santé dédié aux adolescents du Centre Hospitalier de la côte Basque</p>
-                    <a href="fr/partenaire.php#AdoEnia" aria-label="voir AdoEnia">
+                    <a href="partenaire.php#AdoEnia" aria-label="voir AdoEnia">
                        voir le partenaire.
                     </a>
                 </div>
                 <div class="partenaire-item">
                     <h3>La Particule (BE)</h3>
                     <p>Service d’actions en milieu ouvert au bénéfice des jeunes de 0 à 22 ans installé à Hannut (Belgique)</p>
-                    <a href="fr/partenaire.php#La Particule" aria-label="voir la Particule">
+                    <a href="partenaire.php#La Particule" aria-label="voir la Particule">
                         voir le partenaire.
                     </a>
                 </div>
                 <div class="partenaire-item">
                     <h3>MES (LT)</h3>
                     <p>Centre jeunesse qui opère dans 7 espaces autour de Vilnius pour répondre aux besoins des enfants et des jeunes</p>
-                    <a href="fr/partenaire.php#MES" aria-label="voir MES">
+                    <a href="partenaire.php#MES" aria-label="voir MES">
                         voir le partenaire.
                     </a>
                 </div>
                 <div class="partenaire-item">
                     <h3>UPV-EHU (ES)</h3>
                     <p>Groupe de Recherche GANDERE de la Faculté d'Éducation, de Philosophie et d'Anthropologie (HEFA) de l'UPV/EHU.</p>
-                    <a href="fr/partenaire.php#univ pays basque" aria-label="voir l'universitée du Pays Basque">
+                    <a href="partenaire.php#univ pays basque" aria-label="voir l'universitée du Pays Basque">
                         voir le partenaire.
                     </a>
                 </div>
@@ -121,11 +121,11 @@
             <section class="articles-container">
                 <?php
                 // Inclure le code de connexion à la base de données
-                require_once('fr/connexion_Bdd.php');
+                require_once('../fr/connexion_Bdd.php');
 
                 // Requête pour obtenir les 6 derniers articles du blog triés par ID décroissant
                 
-                $query = "SELECT * FROM articles WHERE langue = 'fr' ORDER BY id DESC LIMIT 3"; // Récupère les 3 derniers articles
+                $query = "SELECT * FROM articles WHERE langue = 'eu' ORDER BY id DESC LIMIT 3"; // Récupère les 3 derniers articles
                 $result = $connexion->query($query);
             
                 if ($result->rowCount() > 0) {
@@ -158,5 +158,5 @@
     
     
 </body>
-<?php include 'fr/footer.php'; ?>
+<?php include 'footer.php'; ?>
 </html>

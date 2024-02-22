@@ -33,8 +33,11 @@ body {
     margin: 0%;
 }
 
+main{
+    margin: 10%;
+}
 header {
-    background-color: black;
+    background-color: #222323;
     position: fixed;
     top: 0;
     left: 0;
@@ -49,25 +52,46 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
     font-size: 30px;
+    padding-top: 30px;
 }
 
-nav ul li a {
+
+
+nav ul li a.head {
     text-decoration: none;
     color: white;
-    transition: color 0.3s;
     font-family: 'Londrina Solid', Arial, sans-serif;
     font-size: 23px;
+    /* Transition de couleur uniquement pour les liens dans le menu de navigation */
+    transition: color 0.3s;
+}
+
+
+a:not(header a) {
+    
+    background-color: #A51259;
+    color: white;
+    border: 2px solid #A51259;
+}
+
+a {
+
+    border-radius: 10px; /* Bords arrondis */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    font-weight: bold;
+    font-size: 16px; /* Taille de police par défaut pour les liens */
+    transition: font-size 0.3s; /* Animation de transition pour la taille de police */
 }
 
 nav ul li a:hover {
-    color: #E52D82;
+    color: #A51259; /* Change la couleur au survol */
     font-size: 26px; /* Au survol, agrandissez la taille de police */
 }
 
 footer {
-    background-color: black;
+    background-color: #222323;
     color: white;
     text-align: center;
 }
@@ -82,7 +106,7 @@ footer ul li {
 }
 
 main {
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 /* Styles pour le bouton déroulant de langue */
@@ -98,7 +122,7 @@ main {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #4a4a4a;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -119,16 +143,11 @@ main {
 .lang-dropdown:hover .dropdown-content {
     display: block;
 }
-a {
-    color: #E52D82;
-    text-decoration: none; /* Pour supprimer le soulignement des liens */
-    font-weight: bold;
-    font-size: 16px; /* Taille de police par défaut pour les liens */
-    transition:font-size 0.3s;
-}
+
+
 
 a:hover {
-    color: #FF1493; /* Change la couleur au survol */
+    
     font-size: 18px; /* Au survol, agrandissez la taille de police */
 }
 .logo1,
@@ -143,11 +162,12 @@ a:hover {
         
         width: 40mm;
         height: auto;
+        padding-right: 50px;
 
     }
     .footer2 
     {
-        width: 40mm;
+        width: 60mm;
         height: auto;
 
     }
@@ -178,36 +198,43 @@ a:hover {
 /* Styles pour les smartphones */
 @media screen and (max-width: 600px) {
 
+
     h2{
         font-size:25px;
     }
     .flex-container{
         flex-wrap: wrap;
     }
-    .left-column h3 {font-size: 10px;}
+    .left-column h3 {font-size: 20px;}
 
-        .left-column p {font-size: 10px;}
+        .left-column p {font-size: 15px;}
+
+        .right-column h3 {font-size: 20px;}
 
     img
     {
-        width: 40%;
+        width: 75%;
         height: auto;
     }
    
-
+    
    
-   a{font-size: 10px;}
+   a{font-size: 15px;}
     
     
     
     h1, h3, h4, h5, h6 {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     p{
-        font-size: 10px;
+        font-size: 15px;
     }
 
+    nav ul li {
+        
+        padding-top: 0px;
+    }
  
 
 }
@@ -219,30 +246,39 @@ a:hover {
     .logo-left,
     .logo-right {
     display: none; /* Masquez les logos */
-    
-}
+    }
+   
+
+
 
 }
 
+@media (max-width: 900px) {
+    nav ul li a:hover {
+        color: #A51259;
+        font-size: 24px; /* Au survol, agrandissez la taille de police */
+    }
 
+}
 
 
 @media screen and (max-width: 768px) {
+  
 
     .flex-container{
         flex-wrap: wrap;
     }
-    .right-column p {font-size: 10px;}
+    .right-column p {font-size: 15px;}
 
-        .left-column p {font-size: 10px;}
+        .left-column p {font-size: 15px;}
 
-        .left-column li {font-size: 10px;}
+        .left-column li {font-size: 15px;}
 
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: black;
+        background-color: #222323;
         color: white;
         
     }
@@ -262,10 +298,11 @@ a:hover {
         width: 100px;
         height: auto; 
         padding-right: 10px;
+        
     }
     nav ul {
         display: none;
-        position: absolute;
+        position: static;
         top: 60px;
         left: 0;
         right: 0;
@@ -277,6 +314,7 @@ a:hover {
     nav ul li {
         display: block;
         margin: 10px 0;
+        padding-top: 10px;
     }
 
     nav ul li a {
@@ -286,15 +324,13 @@ a:hover {
         transition: color 0.3s;
     }
 
-    nav ul li a:hover {
-        color: #E52D82;
-    }
+
     .menu-button {
         display: block;
         margin: 0 auto;
     }
     .menu-button {
-        background-color: black;
+        background-color: #222323;
         color: white;
         font-family: 'Open Sans', Arial, sans-serif;
         font-weight: 300;
@@ -306,7 +342,7 @@ a:hover {
     }
     
     .menu-button:hover {
-        background-color: #E52D82;
+        background-color: #A51259;
         color: white;
     }
     
@@ -320,7 +356,7 @@ a:hover {
     
     nav ul li .menu-button:hover {
         background-color: transparent;
-        color: #E52D82;
+        color: #A51259;
     }
     footer {
         width: 100%;
